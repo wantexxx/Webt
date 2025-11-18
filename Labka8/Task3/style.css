@@ -1,0 +1,127 @@
+:root {
+  --color-accent: #444;
+  --color-main: #646464;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.text-secondary {
+  color: var(--color-main);
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+/*main*/
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 0 15px;
+}
+
+/*curent*/
+
+.current {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.current h1 {
+  margin: 0;
+}
+
+.current-forecast {
+  display: flex;
+}
+
+.current-forecast img {
+  width: 80px;
+  height: 80px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.current-forecast h2 {
+  display: flex;
+  height: fit-content;
+  font-size: 32px;
+  align-items: flex-start;
+  line-height: 1;
+  position: relative;
+}
+
+h2 span.text-secondary {
+  font-size: 16px;
+  position: absolute;
+  bottom: 13px;
+  left: 33px;
+}
+
+.current-stats ul {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.current-icon {
+  display: flex;
+}
+
+/*week forecast */
+
+.week {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #646464;
+  padding: 0 5px;
+}
+
+.day:last-child {
+  border-bottom: 1px solid #646464;
+}
+
+.day span {
+  flex: 3;
+}
+
+.pollen {
+  text-align: right;
+}
+
+.day-temps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 2;
+}
+
+.day-temps ul {
+  list-style-type: none;
+}
+
+.day-icon {
+  width: 50px;
+  height: 50px;
+}

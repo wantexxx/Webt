@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+.block {
+  position: absolute;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.first .green {
+  top: 20px;
+  left: 50px;
+  width: 700px;
+  height: 50px;
+  z-index: 1;
+}
+
+.second .small {
+  top: 120px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+}
+
+.second .large {
+  top: 120px;
+  left: 220px;
+  width: 530px;
+  height: 150px;
+  z-index: 1;
+}
+
+.third .purple {
+  top: 300px;
+  left: 50px;
+  width: 700px;
+  height: 50px;
+  z-index: 1;
+}

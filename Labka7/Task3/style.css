@@ -1,0 +1,54 @@
+.custom-input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  opacity: 0.6;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  width: 100%; 
+}
+
+textarea.custom-input {
+  height: 46px;
+  resize: none;
+  padding: 5px 10px;
+}
+
+input.custom-input {
+    width: 250px;
+    height: 30px;
+}
+
+input[type="text"].custom-input:hover,
+input[type="email"].custom-input:hover {
+  border-bottom: 4px solid #fbf000;
+}
+
+input[type="text"].custom-input:focus,
+input[type="email"].custom-input:focus {
+  border-bottom: 4px solid #ffa600;
+  opacity: 0.8;
+}
+
+input[type="password"].custom-input:hover {
+  border-bottom: 4px solid #1cff00;
+}
+
+input[type="password"].custom-input:focus {
+  border-bottom: 4px solid #00ffea;
+  opacity: 0.8;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: inherit; 
+    color: inherit;     
+    cursor: pointer;
+    padding: 0;
+}

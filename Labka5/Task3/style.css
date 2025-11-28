@@ -1,80 +1,69 @@
-body {
-  background-color: #f4f6f8;
-  color: #333;
-  margin: 30px auto;
-  font-family: Arial, sans-serif;
-  max-width: 800px;
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2d2d2d; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
 }
 
-form {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.form-title {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 15px;
+    align-items: center; 
+.form-column-left {
+    width: 30%; 
+    padding-right: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+.form-column-right {
+    width: 70%; 
+}
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box; 
 }
 
-.form-section {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 20px;
-  margin-bottom: 25px;
+.input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #555;
 }
-
-legend {
-  font-weight: bold;
-  color: #ffbb00;
-  padding: 0 10px;
-  font-size: 1.1em;
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
 }
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='tel'],
-input[type='date'],
-textarea,
-select {
-  width: 100%;
-  padding: 9px 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button {
-  background-color: #ffbb00;
-  color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
 .btn-secondary {
-  background-color: #6c757d;
+    background-color: #f44336;
 }
-
-.form-buttons {
-  display: flex;
-  gap: 30px;
-  justify-content: flex-end;
+.form-submit {
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .form-column-left, .form-column-right {
+        width: 100%;
+        text-align: left;
+    }
+    .form-column-left {
+        margin-bottom: 5px;
+    }
 }

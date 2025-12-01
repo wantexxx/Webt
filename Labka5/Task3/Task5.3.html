@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабка 5.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="form" action="" method="get" autocomplete="on">           
+            <div class="form-header">
+                <h2 class="form-title">Особисті дані</h2>
+                <p class="form-text">Будь ласка, заповніть інформацію про себе.</p>
+            </div>
+            <div class="form-content">                
+                <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="fname" class="label">
+                            <span class="label-text">Ім'я:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <input id="fname" name="fname" type="text" class="input" placeholder="Введіть ім'я" required tabindex="1">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="bio" class="label">
+                            <span class="label-text">Коротко про себе:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <textarea id="bio" name="bio" class="input" placeholder="Коротко опишіть себе" required rows="4" tabindex="2"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="password" class="label">
+                            <span class="label-text">Пароль:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <input id="password" type="password" name="password" class="input" placeholder="Наприклад Abc123" required pattern="^(?=.{6,}$)(?=.*[A-Z])(?=.*[a-z])(?=.*\d).*$" title="Рівно 6 символів, має містити хоча б одну велику, одну малу літеру та одну цифру" tabindex="3">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="email" class="label">
+                            <span class="label-text">Email:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <input id="email" type="email" name="email" class="input" placeholder="example@domain.com" required autocomplete="off" pattern="^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" title="Введіть коректний email" tabindex="4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="tel" class="label">
+                            <span class="label-text">Мобільний номер:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <input id="tel" type="tel" name="tel" class="input" placeholder="+380*********" required pattern="^\+380\d{9}$" title="Номер повинен містити +380 та 9 цифр" tabindex="5">
+                    </div>
+                </div>                
+                 <div class="form-row">
+                    <div class="form-column form-column-left">
+                        <label for="bday" class="label">
+                            <span class="label-text">Дата народження:</span>
+                        </label>
+                    </div>
+                    <div class="form-column form-column-right">
+                        <input id="bday" name="bday" type="date" class="input" required tabindex="6">
+                    </div>
+                </div>
+                <div class="form-row form-submit">
+                    <button type="submit" class="btn" tabindex="21">Надіслати</button>
+                    <button type="reset" class="btn btn-secondary" tabindex="22">Скинути</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
